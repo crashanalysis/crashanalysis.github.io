@@ -286,7 +286,7 @@
 <div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
 </div>
 <h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
-<span style="font-size: medium;"><b>Data：</b><br /></span></div>
+<span style="font-size: medium;"><b>Data: </b><br /></span></div>
 <div>
 <ul>
 <li><span style="font-size: medium;"> 13271 exception traces (9722 unique) from testing tools and corresponding Source code of 2,104 apps (4,560 versions)<br /></span></li>
@@ -296,17 +296,20 @@
 <li><span style="font-size: medium;">7764 exception traces (6588 unique) from Github and Google Code with detailed information</span><span style="font-size: medium;"></span><span style="font-size: medium;"></span></li>
 </ul>
 </div>
-<p><strong><span style="font-size: medium;">Data Format:</span></strong></p>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span style="font-size: medium;"><b>Data Format: </b><br /></span></h3>
+<p><strong><span style="font-size: medium;">&nbsp;&nbsp;&nbsp;The dataset contains two folders with their corresponding <span style="color: #ff0000;">.csv</span> file, the file formats are as follows:</span></strong></p>
+<p><span style="font-size: medium;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (i) Data format of stack traces from tools. You can find the stack trace via <strong>[folder]/[buf report file]</strong> from the dataset.</span><span style="font-size: medium;"></span></p>
 <table style="height: 84px; width: 87.1688%; border-collapse: collapse; margin-left: auto; margin-right: auto;" border="1">
 <tbody>
 <tr style="height: 21px;">
-<td style="width: 11.864%; height: 21px; text-align: center;">folder</td>
-<td style="width: 10.5317%; height: 21px; text-align: center;">pkg name</td>
-<td style="width: 10.3474%; height: 21px; text-align: center;">version name</td>
-<td style="width: 4.45662%; height: 21px; text-align: center;">tool</td>
-<td style="width: 10.2971%; height: 21px; text-align: center;">bug report file</td>
-<td style="width: 11.4263%; height: 21px; text-align: center;">exception name</td>
-<td style="width: 20.0853%; height: 21px; text-align: center;">category</td>
+<td style="width: 11.864%; height: 21px; text-align: center;">Folder</td>
+<td style="width: 10.5317%; height: 21px; text-align: center;">Pkg name</td>
+<td style="width: 10.3474%; height: 21px; text-align: center;">Version name</td>
+<td style="width: 4.45662%; height: 21px; text-align: center;">Tool</td>
+<td style="width: 10.2971%; height: 21px; text-align: center;">Bug report file</td>
+<td style="width: 11.4263%; height: 21px; text-align: center;">Exception name</td>
+<td style="width: 20.0853%; height: 21px; text-align: center;">Category</td>
 </tr>
 <tr style="height: 21px;">
 <td style="width: 11.864%; height: 21px; text-align: center;" height="17" align="left">net.fred.feedex_1.8.1</td>
@@ -337,11 +340,66 @@
 </tr>
 </tbody>
 </table>
+<p><span style="font-size: medium;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+<p><span style="font-size: medium;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (ii) Data format of stack traces from Github. You can find the stack trace directly via Issue link or via <strong>[Project]/[Issue ID].txt</strong> from the dataset.<br /></span></p>
+<table style="height: 144px; width: 99.9999%; border-collapse: collapse; margin-left: auto; margin-right: auto;" border="1">
+<tbody>
+<tr style="height: 41px;">
+<td style="width: 11.1111%; height: 41px; text-align: center;">Project</td>
+<td style="width: 11.1111%; height: 41px; text-align: center;">Pkg name</td>
+<td style="width: 12.0258%; text-align: center;">Issue ID</td>
+<td style="width: 12.0258%; height: 41px; text-align: center;">Issue link</td>
+<td style="width: 14.993%; height: 41px; text-align: center;">Exception name</td>
+<td style="width: 5.5036%; height: 41px; text-align: center;">#Comments</td>
+<td style="width: 9.70926%; height: 41px; text-align: center;">Open data</td>
+<td style="width: 10.9943%; height: 41px; text-align: center;">Closed date</td>
+<td style="width: 4.56904%; height: 41px; text-align: center;">Duration(day)</td>
+<td style="width: 7.95687%; height: 41px; text-align: center;">Category</td>
+</tr>
+<tr style="height: 61px;">
+<td style="width: 11.1111%; height: 61px; text-align: center;" height="17" align="left">cgeo/c-geo-opensource</td>
+<td style="width: 11.1111%; height: 61px; text-align: center;" height="17" align="left">cgeo.geocaching</td>
+<td style="width: 12.0258%; text-align: center;">1874</td>
+<td style="width: 12.0258%; height: 61px; text-align: center;" height="17" align="left">https://github.com/cgeo/cgeo/issues/1874</td>
+<td style="width: 14.993%; height: 61px; text-align: center;" height="17" align="left">ActivityNotFound Exception</td>
+<td style="width: 5.5036%; height: 61px; text-align: center;">5</td>
+<td style="width: 9.70926%; height: 61px; text-align: center;" height="17" align="left">2012-07-09</td>
+<td style="width: 10.9943%; height: 61px; text-align: center;" height="17" align="left">2012-10-05</td>
+<td style="width: 4.56904%; height: 61px; text-align: center;">88</td>
+<td style="width: 7.95687%; height: 61px; text-align: center;">framework</td>
+</tr>
+<tr>
+<td style="width: 11.1111%; text-align: center;" height="17" align="left">kontalk/ androidclient</td>
+<td style="width: 11.1111%; text-align: center;" height="17" align="left">org.kontalk</td>
+<td style="width: 12.0258%; text-align: center;">976</td>
+<td style="width: 12.0258%; text-align: center;" height="17" align="left">https://github.com/kontalk/androidclient/issues/976</td>
+<td style="width: 14.993%; text-align: center;" height="17" align="left">ArrayIndexOutOfBounds Exception</td>
+<td style="width: 5.5036%; height: 21px; text-align: center;">0</td>
+<td style="width: 9.70926%; text-align: center;" height="17" align="left">2017-03-15</td>
+<td style="width: 10.9943%; text-align: center;" height="17" align="left">2017-03-16</td>
+<td style="width: 4.56904%; height: 21px; text-align: center;">1</td>
+<td style="width: 7.95687%; height: 21px; text-align: center;">app</td>
+</tr>
+<tr>
+<td style="width: 11.1111%; text-align: center;" height="17" align="left">redsolution/ xabber-android</td>
+<td style="width: 11.1111%; text-align: center;" height="17" align="left">com.xabber. androiddev</td>
+<td style="width: 12.0258%; text-align: center;">675</td>
+<td style="width: 12.0258%; text-align: center;" height="17" align="left">https://github.com/redsolution/xabber-android/issues/675</td>
+<td style="width: 14.993%; text-align: center;" height="17" align="left">ConnectException</td>
+<td style="width: 5.5036%; height: 21px; text-align: center;">5</td>
+<td style="width: 9.70926%; text-align: center;" height="17" align="left">2017-01-15</td>
+<td style="width: 10.9943%; text-align: center;" height="17" align="left">2017-01-16</td>
+<td style="width: 4.56904%; height: 21px; text-align: center;">1</td>
+<td style="width: 7.95687%; height: 21px; text-align: center;">lib</td>
+</tr>
+</tbody>
+</table>
 <span style="font-size: medium;"><b></b></span></div>
 <div></div>
-<div><span style="font-size: medium;"><b>Access to our Dataset: </b></span><br /><span style="font-size: medium;"><br /></span></div>
-<div><span style="font-size: medium;">If you are interested in getting access to our dataset, please provide </span><span style="font-size: medium;">your name, academic email address, affiliation. </span></div>
-<span style="font-size: medium;"><br />Please send your request email to Fan Lingling: <a href="mailto:ecnujanefan@gmail.com">ecnujanefan@gmail.com</a><br /></span></div> 
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span style="font-size: medium;"><b>Access to our dataset: </b><br /></span></h3>
+<div><span style="font-size: medium;">&nbsp;&nbsp;&nbsp;  If you are interested in getting access to our dataset, please provide </span><span style="font-size: medium;">your name, academic email address, affiliation. </span></div>
+<span style="font-size: medium;"><br />&nbsp;&nbsp;&nbsp; Please send your request email to Fan Lingling: <a href="mailto:ecnujanefan@gmail.com">ecnujanefan@gmail.com</a><br /></span></div> 
 
 </div> 
 <div id="sites-canvas-bottom-panel">
